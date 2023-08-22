@@ -1,0 +1,12 @@
+.login {
+	margin: 2rem;
+	padding: 1.5rem 3rem;
+	background-image: linear-gradient(
+			rgba(62, 65, 70, 0.8),
+			rgba(87, 93, 97, 0.8)
+		),
+		url("/public/loginImg.avif");
+	background-size: cover;
+	background-position: center;
+	min-height: calc(100vh - 5rem);
+} 

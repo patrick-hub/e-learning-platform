@@ -1,0 +1,28 @@
+.homepage {
+    height: calc(100vh - 5rem);
+    margin: 2rem;
+    background-image: linear-gradient(
+        rgba(62, 65, 70, 0.8),
+        rgba(87, 93, 97, 0.8)
+      ),
+      url("/public/coverimage.avif");
+    background-size: cover;
+    background-position: center;
+    padding: 1.5rem 3rem;
+    border-radius: 10px;
+  }
+
+  .homepage section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 85%;
+    gap: 20px;
+    text-align: center;
+  }
+  .homepage section p {
+    font-size: 40px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bolder;
+  }
