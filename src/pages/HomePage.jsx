@@ -7,7 +7,6 @@ function HomePage() {
 		<main className={styles.homepage}>
 			<PageNav />
 			<section>
-				<p>LearnIt E-Learning Platform</p>
 				<h1>
 					Explore various Tech Courses. Learnit keeps track of your adventures.
 				</h1>
@@ -17,7 +16,7 @@ function HomePage() {
 					and show your friends how you have progressed.
 				</h2>
 
-				<Link>Start Learning Now</Link>
+				<Link className='cta' to='/login'>Start Learning Now</Link>
 			</section>
 		</main>
 	);

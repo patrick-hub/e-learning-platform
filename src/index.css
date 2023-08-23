@@ -3,6 +3,17 @@
   line-height: 1.5;
   font-weight: 400;
 
+
+    --color-brand--1: #ffb545;
+    --color-brand--2: #f0dbc0;
+  
+    --color-dark--0: #242a2e;
+    --color-dark--1: #2d3439;
+    --color-dark--2: #42484d;
+    --color-light--1: #aaa;
+    --color-light--2: #e9e4e4;
+    --color-light--3: #d6dee0;
+
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
@@ -27,11 +38,17 @@ body {
   min-width: 320px;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.cta:link,
+.cta:visited {
+  display: inline-block;
+  background-color: var(--color-brand--2);
+  color: var(--color-dark--1);
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  border-radius:  10px;
 }
-
 
 
 @media (prefers-color-scheme: light) {

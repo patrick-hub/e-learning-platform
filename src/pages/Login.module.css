@@ -1,6 +1,6 @@
 .login {
 	margin: 2rem;
-	padding: 1.5rem 3rem;
+	padding: 1.5rem 2rem;
 	background-image: linear-gradient(
 			rgba(62, 65, 70, 0.8),
 			rgba(87, 93, 97, 0.8)
@@ -9,4 +9,58 @@
 	background-size: cover;
 	background-position: center;
 	min-height: calc(100vh - 5rem);
-} 
+	border-radius: 10px;
+}
+
+.form {
+	background-color: var(--color-brand--2);
+	border-radius: 7px;
+	padding: 1.1rem 1.3rem;
+	display: flex;
+	flex-direction: column;
+	gap: 0.3rem;
+	max-width: 23rem;
+	margin: 8rem auto;
+	font-weight: bold;
+}
+
+.row {
+	display: flex;
+	flex-direction: column;
+	gap: 0.2rem;
+	
+}
+
+.row input {
+	height: 1.8rem;
+	border-radius: 5px;
+	border: 0.5px solid;
+	padding: 5px;
+}
+
+.btn  {
+	margin-top: 5px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 13px;
+}
+
+.btn a:link {
+	text-decoration: none;
+}
+
+.btn button {
+	padding: 4px 7px;
+	font-size: 13px;
+	background-color: rgb(237, 182, 110);
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+	box-shadow: 0 0 3px ;
+}
+
+.btn button:hover {
+	background-color: rgb(210, 152, 85)
+}
+

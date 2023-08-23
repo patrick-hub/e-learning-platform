@@ -1,17 +1,29 @@
 .nav {
+    position: relative;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-    padding: 20px;
+    padding: 0 10px;
     background-color:#f0dac0;
     border-radius: 10px;
 }
 
+.nav button {
+   display: none; 
+   background: none;
+   border: none;
+   cursor: pointer;
+}
+
+.nav .ham {
+    font-size: 1.5rem;
+
+}
 .nav ul {
 	list-style: none;
 	display: flex;
 	align-items: center;
-	gap: 2rem;
+	gap: 1rem;
     font-size: 20px;
 }
 
@@ -19,17 +31,70 @@
 .nav a:visited {
 	text-decoration: none;
 	text-transform: uppercase;
-	font-size: 1rem;
+	font-size: 0.8rem;
 	font-weight: 600;
     color: #000;
+    padding: 14px;
+    border-radius: 10px;
+
+
+
+}
+
+ul a:link:hover {
+    background-color: #efcaa6;
 
 }
 
 .nav a:global(.active) {
     background-color: #f8ba7d;
-    padding: 12px;
+    padding: 10px;
     border: 2px solid #f8e7d5;
     border-radius: 10px;
 }
 
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main img {
+    margin-top: 15px;
+  }
+  
+  .logo {
+    height: 3.5rem;
+    width: 4rem;
+  }
+
+  
+  @media screen and (max-width: 760px) {
+    .nav ul {
+        display: none;
+    }
+
+  .nav button {
+    display: block;
+
+}
+
+.nav a:link:hover {
+    background-color: #efdfcf;
+
+}
+    .navlinks.show {
+        position: absolute;
+        top: 70%;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: #f2eeee;
+        padding: 30px;
+        transform: translateX(-10%);
+        border-radius: 10PX;
+        transition: transform 0.3s ease-in-out; 
+
+      }
+  }
 
