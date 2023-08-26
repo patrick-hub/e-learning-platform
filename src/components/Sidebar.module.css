@@ -1,0 +1,64 @@
+.sidebar {
+	background:#dbc4a7;
+	height: 100vh;
+	width: 260px;
+}
+
+.userProfile {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	gap: 15px;
+}
+
+.userProfile img {
+	border-radius: 100px;
+	max-width: 20vw;
+	margin-top: 50px;
+}
+
+.sidebarLink ul {
+	list-style: none;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+	margin: 20px 0;
+}
+
+.sidebarLink ul li {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	font-size: 20px;
+    transition: 0.4s ease-in-out; 
+}
+.sidebarLink a {
+	text-decoration: none;
+	color: #000;
+	align-items: center;
+}
+
+.sidebarLink a:hover {
+	margin-right: 2rem;
+}
+
+.sidebarLink li:hover,
+.sidebarLink li:focus {
+	background-color: #eee;
+	padding: 10px;
+	transition: 0.4s ease-in-out;
+	border-radius: 10px;
+    cursor: pointer;
+}
+
+.sidebarLink a:global(.active) {
+    background-color: #eee;
+	padding: 10px;
+	transition: 0.4s ease-in-out;
+	border-radius: 10px;
+    cursor: pointer;
+   
+}

@@ -17,6 +17,8 @@
 
 .nav .ham {
     font-size: 1.5rem;
+    transition: 0.4s ease-in;
+
 
 }
 .nav ul {
@@ -25,6 +27,11 @@
 	align-items: center;
 	gap: 1rem;
     font-size: 20px;
+}
+
+.nav ul li {
+    transition: 0.4s ease-in-out;
+
 }
 
 .nav a:link,
@@ -36,12 +43,14 @@
     color: #000;
     padding: 14px;
     border-radius: 10px;
+    transition: 0.4s ease-in-out;
+
 
 
 
 }
 
-ul a:link:hover {
+.pageNav a:link:hover {
     background-color: #efcaa6;
 
 }
@@ -93,8 +102,9 @@ ul a:link:hover {
         padding: 30px;
         transform: translateX(-10%);
         border-radius: 10PX;
-        transition: transform 0.3s ease-in-out; 
+        transition: 0.4s ease-in-out;
 
       }
+
   }
 

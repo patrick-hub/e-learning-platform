@@ -16,7 +16,7 @@ function HomePage() {
 					and show your friends how you have progressed.
 				</h2>
 
-				<Link className='cta' to='/login'>Start Learning Now</Link>
+				<Link to='/login' className='cta' >Start Learning Now</Link>
 			</section>
 		</main>
 	);

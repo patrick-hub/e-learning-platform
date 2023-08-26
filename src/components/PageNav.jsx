@@ -12,7 +12,7 @@ function PageNav() {
 	return (
 		<nav className={styles.nav}>
 			<Logo />
-			<div>
+			<div className={styles.pageNav}>
 				<button onClick={toggleLinks}>
 					{<GiHamburgerMenu className={styles.ham} />}
 				</button>
