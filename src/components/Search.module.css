@@ -1,22 +1,21 @@
 .search {
     justify-self: center;
     padding: 0.5rem 0.5rem;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     border-radius: 0.5rem;
-    width: 18rem;
+    width: 420px;
     transition: all 0.3s;
     color: var(--color-text);
-    border-width: 1px;
-    border-color: black;  
-    background-color:rgb(232, 237, 237)
+    border: none;
+    border-color: #000;  
+    background-color: #fff
   }
   
   .search::placeholder {
-    color: var(--color-text-dark);
+    color: #33333399
   }
   
   .search:focus {
     outline: none;
-    box-shadow: 0 2.4rem 2.4rem rgba(0, 0, 0, 0.1);
     transform: translateY(-2px);
   }

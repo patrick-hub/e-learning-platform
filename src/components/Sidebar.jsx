@@ -1,44 +1,77 @@
 import styles from "./Sidebar.module.css";
-import Button from "./Button";
 import { NavLink } from "react-router-dom";
-import {AiFillHome} from "react-icons/ai"
-import {FaChalkboardTeacher} from "react-icons/fa"
-import {BsHeadset} from "react-icons/bs"
-import {GiGraduateCap} from "react-icons/gi"
-import {BsFillQuestionCircleFill} from "react-icons/bs"
+import { IoIosLogOut } from "react-icons/io";
+import { LuLayoutDashboard } from "react-icons/lu";
+import { BsBook } from "react-icons/bs";
+import { MdOutlineAssignment } from "react-icons/md";
+import { TfiWorld } from "react-icons/tfi";
+import { LuSettings } from "react-icons/lu";
+import { BsCalendar2Minus } from "react-icons/bs";
 
 function Sidebar() {
 	return (
 		<main className={styles.sidebar}>
-			<div className={styles.userProfile}>
-				<img src={`/user.jpg`} alt="user-img" />
-				<span>Welcome, XXX</span>
-				<Button type="primary">View Profile</Button>
-			</div>
+			<img src={`/public/LearnEdge.svg`} alt="learn-edge" />
 
 			<nav className={styles.sidebarLink}>
 				<ul>
 					<li>
-                        <AiFillHome />
-						<NavLink to="/">Home</NavLink>
+						<NavLink to="/dashboard/display/innerdashboard">
+							<LuLayoutDashboard />
+							Dashboard
+						</NavLink>
 					</li>
 					<li>
-                        <BsFillQuestionCircleFill />
-						<NavLink to="/dashboard/display/about">About</NavLink>
+						<NavLink to="/dashboard/display/subjects">
+							<BsBook />
+							My Subjects
+						</NavLink>
 					</li>
-                    <li>
-                        <GiGraduateCap />
-						<NavLink to="/dashboard/display/courses">Courses</NavLink>
+					<li>
+						<NavLink to="/dashboard/display/assignments">
+							{" "}
+							<MdOutlineAssignment />
+							Assignments
+						</NavLink>
 					</li>
-                    <li>
-                        <FaChalkboardTeacher />
-						<NavLink to="/dashboard/display/teachers">Teachers</NavLink>
+					<li>
+						<NavLink to="/dashboard/display/explore">
+							<TfiWorld />
+							Explore
+						</NavLink>
 					</li>
-                    <li>
-                        <BsHeadset/>
-						<NavLink to="/dashboard/display/contact">Contact Us</NavLink>
+					<li>
+						<NavLink to="/dashboard/display/calendar">
+							{" "}
+							<BsCalendar2Minus />
+							Calendar
+						</NavLink>
+					</li>
+					<li>
+						<NavLink to="/dashboard/display/teachers">
+							{" "}
+							<LuSettings />
+							Settings
+						</NavLink>
 					</li>
 				</ul>
+
+				<div style={{ marginTop: "12rem" }}>
+					<ul className={styles.sidebarLink}>
+						<li>
+							<NavLink to="/dashboard/display/contact">
+								<LuSettings />
+								Support
+							</NavLink>
+						</li>
+						<li>
+							<NavLink to="/dashboard/display/logout">
+								<IoIosLogOut />
+								Logout
+							</NavLink>
+						</li>
+					</ul>
+				</div>
 			</nav>
 		</main>
 	);

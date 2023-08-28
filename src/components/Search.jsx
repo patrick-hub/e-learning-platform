@@ -15,7 +15,7 @@ function Search() {
 		<input
 			className={styles.search}
 			type="text"
-			placeholder="Search..."
+			placeholder="Search for anything"
 			value={query}
 			onChange={(e) => setQuery(e.target.value)}
 			ref={inputEl}

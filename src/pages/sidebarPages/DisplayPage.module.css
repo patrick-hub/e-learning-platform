@@ -1,0 +1,8 @@
+.mainContent p {
+font-size: 12px;
+}
+
+.herocard {
+    display: flex;
+    justify-content: space-between;
+}

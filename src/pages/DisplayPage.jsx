@@ -5,6 +5,7 @@ function DisplayPage() {
     return (
         <div className={styles.outlet}>
               <Outlet />
+
         </div>
     )
 }
