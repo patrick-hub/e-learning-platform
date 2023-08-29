@@ -7,7 +7,7 @@ function HeroCard({ title, count, icon }) {
 				<h3>{title}</h3>
                 <h2>{count}</h2>
 			</div>
-            <div className={styles.icon}>
+            <div className={styles.heroicon}>
                 {icon}
             </div>
 		</main>

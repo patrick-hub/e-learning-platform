@@ -13,6 +13,8 @@ import Assignments from "./pages/sidebarPages/Assignments";
 import Explore from "./pages/sidebarPages/Explore";
 import Calendar from "./pages/sidebarPages/Calendar";
 import Support from "./pages/sidebarPages/Support";
+import "react-big-calendar/lib/css/react-big-calendar.css";
+
 function App() {
 	return (
 		<>

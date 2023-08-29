@@ -1,5 +1,4 @@
 import { useFormik } from "formik";
-import PageNav from "../components/PageNav";
 import styles from "./Login.module.css";
 import { useRef, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
@@ -38,7 +37,10 @@ async function onSubmit(values, actions) {
 
 	return (
 		<main className={styles.login}>
-			<PageNav />
+			<div className={styles.image}>
+				<img src={`/Rectangle 10.svg`} alt="login-img" />
+			</div>
+
 			<form className={styles.form} onSubmit={handleSubmit}>
 				<div className={styles.row}>
 					<label htmlFor="email">Email address</label>

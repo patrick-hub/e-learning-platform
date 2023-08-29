@@ -7,6 +7,7 @@ import { MdOutlineAssignment } from "react-icons/md";
 import { TfiWorld } from "react-icons/tfi";
 import { LuSettings } from "react-icons/lu";
 import { BsCalendar2Minus } from "react-icons/bs";
+import {BiSupport} from "react-icons/bi"
 
 function Sidebar() {
 	return (
@@ -29,7 +30,7 @@ function Sidebar() {
 					</li>
 					<li>
 						<NavLink to="/dashboard/display/assignments">
-							{" "}
+			
 							<MdOutlineAssignment />
 							Assignments
 						</NavLink>
@@ -42,14 +43,14 @@ function Sidebar() {
 					</li>
 					<li>
 						<NavLink to="/dashboard/display/calendar">
-							{" "}
+			
 							<BsCalendar2Minus />
 							Calendar
 						</NavLink>
 					</li>
 					<li>
 						<NavLink to="/dashboard/display/teachers">
-							{" "}
+			
 							<LuSettings />
 							Settings
 						</NavLink>
@@ -60,7 +61,7 @@ function Sidebar() {
 					<ul className={styles.sidebarLink}>
 						<li>
 							<NavLink to="/dashboard/display/contact">
-								<LuSettings />
+								<BiSupport />
 								Support
 							</NavLink>
 						</li>

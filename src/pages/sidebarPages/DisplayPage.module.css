@@ -6,3 +6,41 @@ font-size: 12px;
     display: flex;
     justify-content: space-between;
 }
+
+.calendarSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+   
+}
+
+/* card */
+
+ .card {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff ;
+    height: 500px;
+    overflow-y: scroll;
+    width: 344px;
+    padding: 25px;  
+    gap: 10px;
+    border-radius: 20px;
+  
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.heading a:link {
+	text-decoration: none;
+}
+
+.heading a {
+    color: #004c97;
+}

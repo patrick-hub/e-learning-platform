@@ -25,6 +25,39 @@
   -webkit-text-size-adjust: 100%;
 }
 
+.rbc-month-view {
+  color: #004c97
+  /* border-radius: 10px; */
+}
+
+.rbc-month-row:last-child {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+
+}
+
+.rbc-time-view {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+
+
+}
+
+.rbc-toolbar {
+  padding: 10px;
+  font-weight: bold;
+  font-size: 20px;
+
+}
+.rbc-day-bg {
+  background-color: #fff;
+  border-color: #213547;
+}
+.rbc-calendar {
+  border-radius: 20px;
+  background-color: #fff;
+  padding: 20px;
+}
 
 
 * {

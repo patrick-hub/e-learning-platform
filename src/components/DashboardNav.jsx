@@ -22,7 +22,6 @@ function DashboardNav() {
 				</div>
 				<img src={`/user.jpg`} alt="user-img" />
 				<div>
-					{" "}
 					<p>Patrick Akuagwu</p>
 					<span>Student</span>
 				</div>

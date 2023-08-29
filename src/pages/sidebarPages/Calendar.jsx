@@ -1,7 +1,11 @@
+import Calendarcomp from "../../components/Calendar"
+import ScheduleClass from "../../components/ScheduleClass"
+
 function Calendar() {
     return (
         <div>
-            <h1>Calendar</h1>
+            <ScheduleClass />
+            <Calendarcomp />
         </div>
     )
 }
