@@ -3,15 +3,22 @@ font-size: 12px;
 }
 
 .herocard {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+   grid-gap: 20px;
 }
+
+
+.icon {
+    filter: invert(25%) sepia(98%) saturate(318%) hue-rotate(192deg) brightness(102%) contrast(101%);
+  }
 
 .calendarSection {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin-top: 40px;
+    justify-content: start;
+    margin-top: 38px;
+    gap: 37px;
    
 }
 
@@ -21,9 +28,9 @@ font-size: 12px;
     display: flex;
     flex-direction: column;
     background-color: #fff ;
-    height: 500px;
+    height: 400px;
     overflow-y: scroll;
-    width: 344px;
+    width: 350px;
     padding: 25px;  
     gap: 10px;
     border-radius: 20px;

@@ -19,15 +19,14 @@
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
-	margin-top: 5em;
+	margin-top: 3em;
 }
 
 .sidebarLink ul li {
 	display: flex;
 	align-items: center;
 	gap: 9px;
-	font-size: 16px;
-    transition: 0.4s ease-in-out; 
+	font-size: 14px;
 }
 .sidebarLink a {
 	display: flex;
@@ -37,24 +36,22 @@
 	align-items: center;
 }
 
-.sidebarLink a:hover {
-	margin-right: 1rem;
-}
+
 
 .sidebarLink li:hover,
 .sidebarLink li:focus {
 	background-color: #eee;
-	padding: 8px;
-	transition: 0.4s ease-in-out;
+	padding: 8px 0;
 	border-radius: 10px;
     cursor: pointer;
 }
 
 .sidebarLink li a:global(.active) {
     background-color: #eee;
-	padding: 10px;
-	transition: 0.4s ease-in-out;
+	padding: 5px 0;
 	border-radius: 10px;
     cursor: pointer;
+	width: 100%;
+	color: blue
    
 }

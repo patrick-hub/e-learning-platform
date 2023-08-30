@@ -6,7 +6,6 @@ import Product from "./pages/Product";
 import Signup from "./pages/Signup";
 import PageNotFound from "./pages/PageNotFound";
 import Dashboard from "./pages/Dashboard";
-import DisplayPage from "./pages/DisplayPage";
 import Subjects from "./pages/sidebarPages/Subjects";
 import Innerdashboard from "./pages/sidebarPages/Innerdashboard";
 import Assignments from "./pages/sidebarPages/Assignments";
@@ -21,18 +20,16 @@ function App() {
 			<BrowserRouter>
 				<Routes>
 					<Route path="product" element={<Product />} />
-					<Route path="/" index element={<LoginPage />} />
+					<Route path="/" element={<LoginPage />} />
 					<Route path="signup" element={<Signup />} />
 					<Route path="*" element={<PageNotFound />} />
 					<Route path="/dashboard" element={<Dashboard />}>
-						<Route path="display" element={<DisplayPage />}>
-							<Route path="innerdashboard" element={<Innerdashboard />} />
-							<Route path="subjects" element={<Subjects />} />
-							<Route path="assignments" element={<Assignments />} />
-							<Route path="calendar" element={<Calendar />} />
-							<Route path="explore" element={<Explore />} />
-							<Route path="support" element={<Support />} />
-						</Route>
+						<Route path="innerdashboard" element={<Innerdashboard />} />
+						<Route path="subjects" element={<Subjects />} />
+						<Route path="assignments" element={<Assignments />} />
+						<Route path="calendar" element={<Calendar />} />
+						<Route path="explore" element={<Explore />} />
+						<Route path="support" element={<Support />} />
 					</Route>
 				</Routes>
 			</BrowserRouter>

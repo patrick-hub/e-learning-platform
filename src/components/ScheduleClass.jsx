@@ -1,5 +1,7 @@
 import DatePicker from "react-datepicker";
 import { useState } from "react";
+import styles from "./Search.module.css"
+import Button from "./Button";
 import "react-datepicker/dist/react-datepicker.css";
 
 function ScheduleClass() {
@@ -12,14 +14,13 @@ function ScheduleClass() {
 		setNewEvent({ title: "", start: "", end: "" });
 	}
 	return (
-		<div>
+		<div className={styles.schedule}>
 			<h1>Calendar</h1>
-			<h2>Add New Event</h2>
-			<div>
+			<h2>Add New Class Schedule</h2>
+			<div className={styles.input}>
 				<input
 					type="text"
-					placeholder="Add a class schedule"
-					style={{ width: "20%", marginRight: "10px" }}
+					placeholder="Add a schedule"
 					value={newEvent.title}
 					onChange={(e) => setNewEvent({ ...newEvent, title: e.target.value })}
 				/>
@@ -33,7 +34,7 @@ function ScheduleClass() {
 					selected={newEvent.end}
 					onChange={(end) => setNewEvent({ ...newEvent, end })}
 				/>
-				<button onClick={handleAddEvent}>Add Event</button>
+				<Button onClick={handleAddEvent} type="primary">Add Event</Button>
 			</div>
 		</div>
 	);

@@ -1,13 +1,6 @@
 import styles from "./Sidebar.module.css";
 import { NavLink } from "react-router-dom";
-import { IoIosLogOut } from "react-icons/io";
-import { LuLayoutDashboard } from "react-icons/lu";
-import { BsBook } from "react-icons/bs";
-import { MdOutlineAssignment } from "react-icons/md";
-import { TfiWorld } from "react-icons/tfi";
-import { LuSettings } from "react-icons/lu";
-import { BsCalendar2Minus } from "react-icons/bs";
-import {BiSupport} from "react-icons/bi"
+import { Apps, RoundbookSVG , Grades, Calendar, Assignment, Settings, Logout, Explore, Support} from "../svg";
 
 function Sidebar() {
 	return (
@@ -17,41 +10,47 @@ function Sidebar() {
 			<nav className={styles.sidebarLink}>
 				<ul>
 					<li>
-						<NavLink to="/dashboard/display/innerdashboard">
-							<LuLayoutDashboard />
+						<NavLink to="/dashboard/innerdashboard">
+							<img src={Apps} alt="apps" />
 							Dashboard
 						</NavLink>
 					</li>
 					<li>
-						<NavLink to="/dashboard/display/subjects">
-							<BsBook />
+						<NavLink to="/dashboard/subjects">
+						<img src={RoundbookSVG} alt="apps" />
 							My Subjects
 						</NavLink>
 					</li>
 					<li>
-						<NavLink to="/dashboard/display/assignments">
+						<NavLink to="/dashboard/assignments">
 			
-							<MdOutlineAssignment />
+							<img src={Assignment} alt="assign" />
 							Assignments
 						</NavLink>
 					</li>
 					<li>
-						<NavLink to="/dashboard/display/explore">
-							<TfiWorld />
+						<NavLink to="/dashboard/.">
+							<img src={Grades} alt="grades-icon" />
+							Grades
+						</NavLink>
+					</li>
+					<li>
+						<NavLink to="/dashboard/explore">
+							<img src={Explore} alt="grades-icon" />
 							Explore
 						</NavLink>
 					</li>
 					<li>
-						<NavLink to="/dashboard/display/calendar">
+						<NavLink to="/dashboard/calendar">
 			
-							<BsCalendar2Minus />
+						<img src={Calendar} alt="grades-icon" />
 							Calendar
 						</NavLink>
 					</li>
 					<li>
-						<NavLink to="/dashboard/display/teachers">
+						<NavLink to="/dashboard/teachers">
 			
-							<LuSettings />
+							<img src={Settings} alt="settings-icon" />
 							Settings
 						</NavLink>
 					</li>
@@ -60,14 +59,14 @@ function Sidebar() {
 				<div style={{ marginTop: "12rem" }}>
 					<ul className={styles.sidebarLink}>
 						<li>
-							<NavLink to="/dashboard/display/contact">
-								<BiSupport />
+							<NavLink to="/dashboard/contact">
+								<img src={Support} alt="support" />
 								Support
 							</NavLink>
 						</li>
 						<li>
-							<NavLink to="/dashboard/display/logout">
-								<IoIosLogOut />
+							<NavLink to="/dashboard/logout">
+								<img src={Logout} alt="logout" />
 								Logout
 							</NavLink>
 						</li>

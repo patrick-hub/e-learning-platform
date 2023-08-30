@@ -1,6 +1,6 @@
 import styles from "./Dashboard.module.css";
 import Sidebar from "../components/Sidebar";
-import DisplayPage from "./DisplayPage";
+import { Outlet } from "react-router";
 import DashboardNav from "../components/DashboardNav";
 function Dashboard() {
 	return (
@@ -11,7 +11,10 @@ function Dashboard() {
 
 			<section className={styles.page}>
 				<DashboardNav />
-				<DisplayPage />
+				{/* <DisplayPage /> */}
+				<div className={styles.outlet}>
+					<Outlet />
+				</div>
 			</section>
 		</main>
 	);

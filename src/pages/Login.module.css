@@ -10,30 +10,36 @@
 
 .login {
 	display: flex;
+	background-color: #f5f5f5;
+	place-items: center;
+	height: 100vh;
 }
 
 .login .image {
 	height: 100vh;
 	overflow: hidden;
-	background-color: #f5f5f5;
 }
 
-/* .login img {
-    height: 100vh;
-    overflow-y: hidden;
-} */
+
 
 .form {
-	background-color: var(--color-brand--2);
+	background-color: #f5f5f5;
 	border-radius: 7px;
-	padding: 1.1rem 1.3rem;
+	padding: 2rem 1.3rem;
 	display: flex;
 	flex-direction: column;
-	gap: 0.3rem;
-	/* max-width: 23rem; */
-	margin: 8rem auto;
+	gap: 2rem;
+	width: 23rem;
+	margin: 10rem auto;
 	font-weight: bold;
-	height: 200px;
+	min-height: 20vh;
+	border: 1px solid #7dc5fa;
+}
+
+.signup {
+	gap: 0.4rem;
+	font-size: 14px;
+	overflow-y: hidden;
 }
 
 .row {
@@ -42,8 +48,13 @@
 	gap: 0.2rem;
 }
 
+.row small {
+	margin-left: 10rem;
+	font-size: 10px;
+}
+
 .row input {
-	height: 1.8rem;
+	height: 2rem;
 	border-radius: 5px;
 	padding: 5px;
 	border-width: 0.9px;
@@ -57,18 +68,25 @@
 	font-size: 13px;
 }
 
-.btn a:link {
+.row a:link {
 	text-decoration: none;
 }
 
+.row a {
+	color: #004c97;
+}
+
 .btn button {
-	padding: 4px 7px;
+	padding: 0.7rem 0.4rem;
 	font-size: 13px;
-	background-color: rgb(237, 182, 110);
+	color: #fff;
+	font-weight: bold;
+	background-color: #004c97;
 	border-radius: 5px;
 	border: none;
 	cursor: pointer;
 	box-shadow: 0 0 3px;
+	width: 100%;
 }
 
 .btn button:hover {
@@ -83,7 +101,7 @@ input.inputError {
 .errorFeedback {
 	color: rgb(235, 54, 54);
 	margin-top: -4px;
-	font-size: 12px;
+	font-size: 10px;
 }
 
 .btnbutton:disabled {

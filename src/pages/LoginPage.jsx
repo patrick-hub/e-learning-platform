@@ -4,32 +4,34 @@ import { useRef, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { loginSchema } from "../schemas";
 
-
-
-
 function LoginPage() {
 	const userRef = useRef();
-	const navigate = useNavigate()
-	const { values, errors, handleChange, handleBlur, isSubmitting, touched, handleSubmit } =
-		useFormik({
-			initialValues: {
-				email: "",
-				password: "",
-			},
-			validationSchema: loginSchema,
-			onSubmit,
-		});
+	const navigate = useNavigate();
+	const {
+		values,
+		errors,
+		handleChange,
+		handleBlur,
+		isSubmitting,
+		touched,
+		handleSubmit,
+	} = useFormik({
+		initialValues: {
+			email: "",
+			password: "",
+		},
+		validationSchema: loginSchema,
+		onSubmit,
+	});
 
 	console.log(errors);
 
-
-async function onSubmit(values, actions) {
-
-	actions.resetForm()
-	await new Promise((resolve) => setTimeout(resolve, 1000))
-	navigate("/dashboard")
-	console.log("Submitted");
-}
+	async function onSubmit(values, actions) {
+		actions.resetForm();
+		await new Promise((resolve) => setTimeout(resolve, 1000));
+		navigate("/dashboard/innerdashboard");
+		console.log("Submitted");
+	}
 
 	useEffect(() => {
 		userRef.current.focus();
@@ -42,6 +44,18 @@ async function onSubmit(values, actions) {
 			</div>
 
 			<form className={styles.form} onSubmit={handleSubmit}>
+				<div
+					style={{
+						display: "flex",
+						justifyContent: "center",
+						flexDirection: "column",
+						alignItems: "center",
+						gap: "30px",
+					}}>
+					<img src={"/LearnEdge.svg"} alt="learnedge-logo" />
+					<h2>Welcome back</h2>
+				</div>
+
 				<div className={styles.row}>
 					<label htmlFor="email">Email address</label>
 					<input
@@ -76,13 +90,15 @@ async function onSubmit(values, actions) {
 					{errors.password && touched.password && (
 						<p className={styles.errorFeedback}>{errors.password}</p>
 					)}
-				</div>
-
-				<div className={styles.btn}>
-					<button type="submit" disabled={isSubmitting}>Login</button>
 					<small>
 						Dont have an Account? <Link to="/signup">Register</Link>
 					</small>
+				</div>
+
+				<div className={styles.btn}>
+					<button type="submit" disabled={isSubmitting}>
+						Login
+					</button>
 				</div>
 			</form>
 		</main>

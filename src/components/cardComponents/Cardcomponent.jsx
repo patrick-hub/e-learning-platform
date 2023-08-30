@@ -29,7 +29,6 @@ Card.propTypes = {
 		teacher: PropTypes.string.isRequired,
 		status: PropTypes.string.isRequired,
 		daysLeft: PropTypes.number.isRequired,
-		icon: PropTypes.node.isRequired,
 	}).isRequired,
 };
 

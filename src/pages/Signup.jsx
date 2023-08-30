@@ -1,13 +1,12 @@
 import { useFormik } from "formik";
-import PageNav from "../components/PageNav";
 import styles from "./Login.module.css";
 import { Link } from "react-router-dom";
 import { signupSchema } from "../schemas";
 
 async function onSubmit(values, actions) {
 	console.log("Submitted");
-	await new Promise((resolve) => setTimeout(resolve, 1000))
-	actions.resetForm()
+	await new Promise((resolve) => setTimeout(resolve, 1000));
+	actions.resetForm();
 }
 
 function Signup() {
@@ -33,8 +32,23 @@ function Signup() {
 
 	return (
 		<main className={styles.login}>
-			<PageNav />
-			<form className={styles.form} onSubmit={handleSubmit}>
+			<div className={styles.image}>
+				<img src={`/Rectangle 10.svg`} alt="login-img" />
+			</div>
+			<form
+				className={`${styles.form} ${styles.signup}`}
+				onSubmit={handleSubmit}>
+				<div
+					style={{
+						display: "flex",
+						justifyContent: "center",
+						flexDirection: "column",
+						alignItems: "center",
+						gap: "30px",
+					}}>
+					<img src={"/LearnEdge.svg"} alt="learnedge-logo" />
+					<h2>Welcome back</h2>
+				</div>
 				<div className={styles.row}>
 					<label htmlFor="firstName">First Name</label>
 					<input
@@ -97,10 +111,9 @@ function Signup() {
 							errors.password && touched.password ? `${styles.inputError}` : ""
 						}
 					/>
-						{errors.password && touched.password && (
+					{errors.password && touched.password && (
 						<p className={styles.errorFeedback}>{errors.password}</p>
 					)}
-
 				</div>
 				<div className={styles.row}>
 					<label htmlFor="confirmPassword">Confirm Password</label>
@@ -115,19 +128,18 @@ function Signup() {
 								: ""
 						}
 					/>
-						{errors.confirmPassword && touched.confirmPassword && (
+					{errors.confirmPassword && touched.confirmPassword && (
 						<p className={styles.errorFeedback}>{errors.confirmPassword}</p>
 					)}
-
+					<small>
+						Already have an Account? <Link to="/">Login</Link>
+					</small>
 				</div>
 
 				<div className={styles.btn}>
 					<button disabled={isSubmitting} type="submit">
 						Sign In
 					</button>
-					<small>
-						Already have an Account? <Link to="/login">Login</Link>
-					</small>
 				</div>
 			</form>
 		</main>

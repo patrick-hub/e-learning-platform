@@ -1,19 +1,16 @@
 import { useState } from "react";
 import HeroCard from "../../components/cardComponents/HeroCard";
 import styles from "./DisplayPage.module.css";
-import { BsBook } from "react-icons/bs";
-import { MdAssignmentTurnedIn } from "react-icons/md";
-import { MdOutlineLibraryBooks } from "react-icons/md";
-import { CiTimer } from "react-icons/ci";
 import Calendarcomp from "../../components/Calendar";
 import dummyData from "../../../dummydata";
 import Card from "../../components/cardComponents/Cardcomponent";
 import { Link } from "react-router-dom";
+import { Duration, RoundbookSVG,Calendar, Notebook } from "../../svg";
 
 function Innerdashboard() {
-	const [totalSubjects] = useState(10);
+	const [totalSubjects] = useState(11);
 	const [totalAssignments] = useState(10);
-	const [totalMaterials] = useState(10);
+	const [totalMaterials] = useState(13);
 	const [learningHours] = useState(12);
 	return (
 		<main className={styles.mainContent}>
@@ -27,22 +24,23 @@ function Innerdashboard() {
 				<HeroCard
 					title="Total Subjects"
 					count={totalSubjects}
-					icon={<BsBook />}
+					icon={<img src={RoundbookSVG} className={styles.icon} alt="roundbook-Icon" />}
 				/>
+
 				<HeroCard
 					title="Total Assignments"
 					count={totalAssignments}
-					icon={<MdAssignmentTurnedIn />}
+					icon={<img src={Calendar} className={styles.icon} alt="calendar-Icon" />}
 				/>
 				<HeroCard
 					title="Total Materials"
 					count={totalMaterials}
-					icon={<MdOutlineLibraryBooks />}
+					icon={<img src={Notebook} className={styles.icon} alt="notebook-Icon" />}
 				/>
 				<HeroCard
 					title="Learning Hours"
 					count={learningHours}
-					icon={<CiTimer />}
+					icon={<img src={Duration} className={styles.icon} alt="duration-Icon" />}
 				/>
 			</section>
 
@@ -52,7 +50,7 @@ function Innerdashboard() {
 				<div className={styles.card}>
 					<div className={styles.heading}>
 						<h1>My Assignments</h1>
-						<Link to="/dashboard/display/assignments">See All</Link>
+						<Link to="/dashboard/assignments">See All</Link>
 					</div>
 
 					{dummyData.map((data) => (
