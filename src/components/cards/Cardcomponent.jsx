@@ -1,0 +1,46 @@
+import styles from "./Herocard.module.css";
+import PropTypes from "prop-types";
+import { Calendar, Mark, RoundbookSVG, User } from "../../svg";
+function Card(props) {
+	return (
+		<main className={styles.card}>
+			<section className={styles.assign}>
+				<span>
+					<img src={Calendar} alt="calendar" />
+					Assigned : {props.data.date}
+				</span>
+
+				<small>{props.data.status}</small>
+			</section>
+			<h3>Assignment 1{props.data.subject}</h3>
+			<section className={styles.cardDetails}>
+				<img src={RoundbookSVG} alt="book" /> <small>chemistry</small>
+				<img src={User} alt="user" />
+				<small>{props.data.teacher}</small>
+			</section>
+
+			<section className={styles.dateSection}>
+				<small className={styles.deadline}>
+					<img src={Calendar} alt="calendar" /> Deadline - {props.data.deadline}
+				</small>
+				<small className={styles.mark}>
+					<img src={Mark} alt="mark" /> Mark - 20
+				</small>
+			</section>
+			<small>{props.data.daysLeft} days left</small>
+		</main>
+	);
+}
+
+Card.propTypes = {
+	data: PropTypes.shape({
+		date: PropTypes.string.isRequired,
+		subject: PropTypes.string.isRequired,
+		teacher: PropTypes.string.isRequired,
+		status: PropTypes.string.isRequired,
+		daysLeft: PropTypes.number.isRequired,
+		deadline: PropTypes.string.isRequired,
+	}).isRequired,
+};
+
+export default Card;

@@ -1,9 +1,9 @@
 import { useState } from "react";
-import HeroCard from "../../components/cardComponents/HeroCard";
-import styles from "./DisplayPage.module.css";
+ import styles from "./DisplayPage.module.css";
+ import HeroCard from "../../components/cards/HeroCard"
 import Calendarcomp from "../../components/Calendar";
-import dummyData from "../../../dummydata";
-import Card from "../../components/cardComponents/Cardcomponent";
+import {dummyData} from "../../../dummydata";
+import Card from "../../components/cards/Cardcomponent";
 import { Link } from "react-router-dom";
 import { Duration, RoundbookSVG,Calendar, Notebook } from "../../svg";
 

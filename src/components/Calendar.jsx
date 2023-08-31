@@ -40,12 +40,12 @@ function Calendarcomp() {
   
 
     return (
-        <div>
+        <>
             
-            <Calendar localizer={localizer} events={events} startAccessor="start" endAccessor="end" style={{ height: 400, width: 712}} />
+            <Calendar localizer={localizer} events={events} startAccessor="start" endAccessor="end" style={{ height: 400}} className='calen'/>
 
             
-        </div>
+        </>
     );
 }
 

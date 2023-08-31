@@ -1,73 +1,83 @@
-
-
 .dashboard {
-	display:flex;
-	height: 100vh;
-    background-color: #f5f5f5;
+	display: flex;
+	height: 100%;
+	background-color: #f5f5f5;
+	overflow-y: hidden;
 }
 .sidebar {
-	height: 100vh;
-    /* width: 30%; */
+	flex: 0 0 12%;
+	background-color: var(--sidebar-color);
 }
 
-.dashNav {
-    background-color: var(--nav-color);
-    width: 100%;
-    overflow-x: hidden;
-    padding: 2rem;
-    height: 80px;
-    border-bottom: 1px solid #dad8d8;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.dashIcon {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-weight: bold;
+@media screen and (max-width: 800px) {
+	.sidebar {
+		display: none;
+	}
 }
 
 .page {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-.outlet {
-    overflow-y: scroll;
-    padding: 20px 40px;
-    background: var(--nav-color);
-    height: 100vh;
-    
-}
-
-.logo {
-    height: 3.8rem;
-    width: 4rem;
-  }
-
-  .userProfile {
 	display: flex;
+	flex-direction: column;
+	flex: 1;
+}
+
+/* Dashboard nav */
+.dashNav {
+	background-color: var(--nav-color);
+	padding: 2rem;
+	height: 80px;
+	border-bottom: 1px solid #dad8d8;
+	display: flex;
+	align-items: center;
 	justify-content: space-around;
+	width: 100%;
+}
+
+.dashIcon {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	font-weight: bold;
+}
+
+.userProfile {
+	display: flex;
+	justify-content: space-between;
 	align-items: center;
 	color: #000;
 	gap: 40px;
-    font-size: 10px;
-   
+	font-size: 10px;
 }
 
 .userProfile p {
-    font-weight: bold;
+	font-weight: bold;
 }
 
 .userProfile img {
-    height: 3rem;
+	height: 3rem;
 	border-radius: 100px;
-
 }
 
 .notification {
-    height: 60px;
+	height: 60px;
+}
+
+.page {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+}
+
+.outlet {
+	overflow-y: scroll;
+	padding: 20px 40px;
+	background: var(--nav-color);
+	height: 100vh;
+	width: 100%;
+}
+
+
+.logo {
+	height: 3.8rem;
+	width: 4rem;
 }

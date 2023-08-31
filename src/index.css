@@ -25,6 +25,8 @@
   -webkit-text-size-adjust: 100%;
 }
 
+/* Calendar Component */
+
 .rbc-month-view {
   color: #004c97
   /* border-radius: 10px; */
@@ -59,6 +61,21 @@
   padding: 20px;
 }
 
+.calen {
+  width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  .calen {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .calen {
+    width: 40%;
+  }
+}
 
 * {
   padding: 0;

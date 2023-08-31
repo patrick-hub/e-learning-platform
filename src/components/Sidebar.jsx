@@ -25,13 +25,13 @@ function Sidebar() {
 						<NavLink to="/dashboard/assignments">
 			
 							<img src={Assignment} alt="assign" />
-							Assignments
+							<span>Assignments</span>
 						</NavLink>
 					</li>
 					<li>
 						<NavLink to="/dashboard/.">
 							<img src={Grades} alt="grades-icon" />
-							Grades
+							<span>Grades</span>
 						</NavLink>
 					</li>
 					<li>
