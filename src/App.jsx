@@ -16,7 +16,7 @@ import "react-big-calendar/lib/css/react-big-calendar.css";
 
 function App() {
 	return (
-		<>
+		<div>
 			<BrowserRouter>
 				<Routes>
 					<Route path="product" element={<Product />} />
@@ -33,7 +33,7 @@ function App() {
 					</Route>
 				</Routes>
 			</BrowserRouter>
-		</>
+		</div>
 	);
 }
 

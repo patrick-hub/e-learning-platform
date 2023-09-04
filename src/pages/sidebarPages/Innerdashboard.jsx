@@ -53,7 +53,7 @@ function Innerdashboard() {
 						<Link to="/dashboard/assignments">See All</Link>
 					</div>
 
-					{dummyData.map((data) => (
+					{dummyData.slice(0, 3).map((data) => (
 						<Card key={data.id} data={data} />
 					))}
 				</div>

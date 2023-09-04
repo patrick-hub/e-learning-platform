@@ -11,7 +11,6 @@ function Dashboard() {
 
 			<section className={styles.page}>
 				<DashboardNav />
-				{/* <DisplayPage /> */}
 				<div className={styles.outlet}>
 					<Outlet />
 				</div>

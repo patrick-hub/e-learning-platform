@@ -58,6 +58,10 @@
 	justify-content: space-between;
 }
 
+.assign img {
+width: 10px;
+}
+
 .assign span {
 	display: flex;
 	font-size: 10px;
@@ -68,22 +72,22 @@
 	background-color: #fffaf2;
 	color: #ffda97;
 	font-size: 10px;
-	padding: 5px;
-	border-radius: 10px;
+	border-radius: 6px;
+	padding: 4px;
 	font-weight: bold;
 }
 
 
-.cardDetails {
+.subjects {
 	margin-top: 10px;
 	display: flex;
 	align-items: center;
 	gap: 8px;
 }
 
-.cardDetails .deadline, img{
-	width: 10px;
-
+.dateSection img,
+.subjects img {
+  width: 10px;
 }
 
 .dateSection {
@@ -108,6 +112,8 @@
 	color: #ffff;
 	font-weight: bold;
 }
+
+
 
 
 
@@ -150,7 +156,7 @@
 }
 .usericon img {
     width: 12px;
-    height: 12px;
+    height: 11px;
 }
 
 .activity {

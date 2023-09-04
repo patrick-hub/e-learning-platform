@@ -3,7 +3,7 @@ const dummyData = [
 		id: 1,
 		teacher: "Mr John",
 		date: "21/02/2023",
-		status: "In progress",
+		status: "in progress",
 		subject: "Physics",
 		daysLeft: 3,
 		deadline: "30/02/2023"

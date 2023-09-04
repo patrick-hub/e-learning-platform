@@ -2,8 +2,6 @@
 	font-size: 12px;
 }
 
-
-
 .herocard {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
@@ -14,8 +12,8 @@
 	.herocard {
 		grid-template-columns: repeat(3, 1fr);
 		grid-gap: 10px;
-		margin-bottom: 40px ;
-		width:80%;
+		margin-bottom: 40px;
+		width: 80%;
 	}
 }
 
@@ -23,14 +21,14 @@
 	.herocard {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
-		width: 50%
+		width: 50%;
 	}
 }
-
 
 .icon {
 	filter: invert(25%) sepia(98%) saturate(318%) hue-rotate(192deg)
 		brightness(102%) contrast(101%);
+	width: 50%;
 }
 
 /* Calendar sectiom */
@@ -81,48 +79,79 @@
 
 	.card {
 		width: 35%;
-
 	}
 }
 
-
-/* Subject page */ 
+/* Subject page */
 .subjectPage {
 	background-color: #fff;
 	height: 100vh;
 	overflow-y: scroll;
 	padding: 20px;
+	border-radius: 10px;
 }
 
 .subjectcards {
 	width: 92%;
-	display:grid;
+	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	gap: 15px;
-	grid-template-rows: min-content
+	grid-template-rows: min-content;
 }
 
-@media screen  and (max-width: 1000px){
+@media screen and (max-width: 1000px) {
 	.subjectcards {
 		grid-template-columns: repeat(3, 1fr);
-
 	}
 }
 
-@media screen  and (max-width: 800px){
+@media screen and (max-width: 800px) {
 	.subjectcards {
 		grid-template-columns: repeat(2, 1fr);
-
 	}
 }
 
-@media screen  and (max-width: 700px){
+@media screen and (max-width: 700px) {
 	.subjectcards {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		
-
 	}
+}
+
+.assignment {
+	background-color: #fff;
+	padding: 20px;
+}
+
+.assignmentcard {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 10px;
+	background-color: #fff;
+	padding: 10px;
+}
+
+.dropDown {
+	display: flex;
+	flex-direction: column;
+	width: 180px;
+	justify-content: flex-start;
+	gap: 10px;
+	margin-bottom: 30px;
+}
+
+.totalSubjects {
+	display: flex;
+	justify-content: start;
+	gap: 3px;
+	margin-bottom: 20px;
+}
+
+.totalSubjects span {
+	background-color: #004c97;
+	padding: 0px 3px;
+	color: #fff;
+	border-radius: 4px;
 }

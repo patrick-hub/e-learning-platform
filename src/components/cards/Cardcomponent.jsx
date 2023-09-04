@@ -10,10 +10,18 @@ function Card(props) {
 					Assigned : {props.data.date}
 				</span>
 
-				<small>{props.data.status}</small>
+				<small
+					style={{
+						backgroundColor:
+							props.data.status === "done" ? "#f6fbf6" : "#fffaf2",
+						color: props.data.status === "done" ? "#75c178" : "#ffa501",
+						padding: "3px",
+					}}>
+					{props.data.status}
+				</small>
 			</section>
 			<h3>Assignment 1{props.data.subject}</h3>
-			<section className={styles.cardDetails}>
+			<section className={styles.subjects}>
 				<img src={RoundbookSVG} alt="book" /> <small>chemistry</small>
 				<img src={User} alt="user" />
 				<small>{props.data.teacher}</small>

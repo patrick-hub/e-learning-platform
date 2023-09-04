@@ -14,6 +14,8 @@ import User from "./user.svg"
 import Timeforward from "./timeforward.svg"
 import Chemistry from "./chemistry.svg"
 import Mark from "./mark.svg"
+import Furthermaths from "./furthermaths.svg"
+import SearchIcon from "./search.svg"
 
 export {
 	RoundbookSVG,
@@ -31,5 +33,7 @@ export {
     User,
     Timeforward,
     Chemistry,
-    Mark
+    Mark,
+	Furthermaths,
+	SearchIcon
 };

@@ -13,7 +13,7 @@ function DashboardNav() {
 
 			<div className={styles.userProfile}>
 				<div>
-					<Search />
+					<Search placeholder={`Search for anything`}/>
 				</div>
 				<div>
 					<IoIosNotificationsOutline
