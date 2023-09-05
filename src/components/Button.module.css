@@ -33,3 +33,18 @@
 	color: var(--color-dark--1);
 	box-shadow: 0 0.4rem 1.2rem rgba(36, 42, 46, 0.16);
 }
+
+/*  Progress bar */
+.progressbar{
+	overflow: hidden;
+	width: 100%;
+	height: 5px;
+	border-radius: 5px;
+	background-color: #eee;
+}
+
+.progressPercent span{
+	font-weight:400;	
+	color: #000 !important;
+	margin-top: 6px;
+}

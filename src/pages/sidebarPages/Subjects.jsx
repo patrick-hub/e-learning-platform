@@ -37,9 +37,11 @@ function Subjects() {
 			</div>
 
 			<div className={styles.subjectcards}>
-				{assignmentdata.map((item) => (
-					<SubjectCard key={item.id} item={item} />
-				))}
+				{assignmentdata.map((item) => 
+					<div key={item.id} style={{display:"flex", justifyContent: "center"}}>
+					<SubjectCard item={item} />
+					</div>
+				)}
 			</div>
 		</div>
 	);

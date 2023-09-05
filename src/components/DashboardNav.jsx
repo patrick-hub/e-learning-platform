@@ -1,7 +1,7 @@
 import styles from "../pages/Dashboard.module.css";
 import Search from "./Search";
 import { LuLayoutDashboard } from "react-icons/lu";
-import { IoIosNotificationsOutline } from "react-icons/io";
+import { Bell } from "../svg";
 
 function DashboardNav() {
 	return (
@@ -16,9 +16,7 @@ function DashboardNav() {
 					<Search placeholder={`Search for anything`}/>
 				</div>
 				<div>
-					<IoIosNotificationsOutline
-						style={{ height: "25px", width: "40px" }}
-					/>
+					<img src={Bell} alt="bell-icon" style={{height: "20px", width:'20px'}}/>
 				</div>
 				<img src={`/user.jpg`} alt="user-img" />
 				<div>

@@ -10,12 +10,13 @@ import Grades from "./grade.svg";
 import Explore from "./explore.svg";
 import Settings from "./settings.svg";
 import Physics from "./physics.svg";
-import User from "./user.svg"
-import Timeforward from "./timeforward.svg"
-import Chemistry from "./chemistry.svg"
-import Mark from "./mark.svg"
-import Furthermaths from "./furthermaths.svg"
-import SearchIcon from "./search.svg"
+import User from "./user.svg";
+import Timeforward from "./timeforward.svg";
+import Chemistry from "./chemistry.svg";
+import Mark from "./mark.svg";
+import Furthermaths from "./furthermaths.svg";
+import SearchIcon from "./search.svg";
+import Bell from "./bell.svg";
 
 export {
 	RoundbookSVG,
@@ -35,5 +36,6 @@ export {
     Chemistry,
     Mark,
 	Furthermaths,
-	SearchIcon
+	SearchIcon,
+	Bell
 };

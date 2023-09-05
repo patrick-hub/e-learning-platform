@@ -1,6 +1,7 @@
 import styles from "./Herocard.module.css";
 import PropTypes from "prop-types";
 import { Calendar, Mark, RoundbookSVG, User } from "../../svg";
+import Progressbar from "../ProgressBar";
 function Card(props) {
 	return (
 		<main className={styles.card}>
@@ -35,7 +36,9 @@ function Card(props) {
 					<img src={Mark} alt="mark" /> Mark - 20
 				</small>
 			</section>
-			<small>{props.data.daysLeft} days left</small>
+	
+				<Progressbar daysLeft={props.data.daysLeft}/>
+				{/* <small>{props.data.daysLeft} days left</small> */}
 		</main>
 	);
 }

@@ -15,20 +15,23 @@ function Search({ placeholder, customStyles }) {
 	});
 
 	return (
-		<input
-			className={`${styles.search} ${customStyles}`}
-			type="text"
-			placeholder={placeholder}
-			value={query}
-			onChange={(e) => setQuery(e.target.value)}
-			ref={inputEl}
-			style={{
-				backgroundImage: `url(${SearchIcon})`, 
-				backgroundRepeat: "no-repeat",
-				backgroundPosition: "10px center",
-				paddingLeft: "40px",
-			}}
-		/>
+		<div>
+			<input
+				className={`${styles.search} ${customStyles}`}
+				type="text"
+				placeholder={placeholder}
+				value={query}
+				onChange={(e) => setQuery(e.target.value)}
+				ref={inputEl}
+				style={{
+					backgroundImage: `url(${SearchIcon})`,
+					backgroundRepeat: "no-repeat",
+					backgroundPosition: "10px center",
+					paddingLeft: "40px",
+					...customStyles,
+				}}
+			/>
+		</div>
 	);
 }
 

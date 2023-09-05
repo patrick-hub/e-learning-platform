@@ -4,16 +4,17 @@ import styles from "./DisplayPage.module.css";
 import Select from "react-dropdown-select";
 import { useState } from "react";
 import Search from "../../components/Search";
+import { RoundbookSVG } from "../../svg";
 
 function Assignments() {
 	const [selectedOptions, setSelectedOptions] = useState();
 
-    const customStyles = {
-        border: "0.8px solid #999",
-        color: "#333",
-        marginTop: "35px",
-        width: "300px"
-      };
+	const customStyles = {
+		border: "0.8px solid #999",
+		color: "#333",
+		marginTop: "35px",
+		width: "100%",
+	};
 
 	const options = [
 		{ label: "Physics", value: 1 },
@@ -25,7 +26,7 @@ function Assignments() {
 	}
 	return (
 		<div className={styles.assignment}>
-			<div style={{display: "flex", gap: "20px"}}>
+			<div className={styles.assignmentDropdown}>
 				<div className={styles.dropDown}>
 					<p>Sort by</p>
 					<Select
@@ -47,9 +48,17 @@ function Assignments() {
 						placeholder="Chemistry"
 					/>
 				</div>
-                <div>
-                    <Search placeholder={`Search for assignment`} customStyles={customStyles}/>
-                </div>
+				<div>
+					<Search
+						placeholder={`Search for assignment`}
+						customStyles={customStyles}
+					/>
+				</div>
+			</div>
+			<div className={styles.totalSubjects}>
+				<img src={RoundbookSVG} alt="book-icon" />
+				<p>Total Assignments</p>
+				<span>12</span>
 			</div>
 
 			<div className={styles.assignmentcard}>

@@ -42,7 +42,7 @@ function Calendarcomp() {
     return (
         <>
             
-            <Calendar localizer={localizer} events={events} startAccessor="start" endAccessor="end" style={{ height: 400}} className='calen'/>
+            <Calendar localizer={localizer} events={events} startAccessor="start" endAccessor="end" style={{ height: 400}} />
 
             
         </>
