@@ -5,6 +5,7 @@ import startOfWeek from "date-fns/startOfWeek";
 import { Calendar, dateFnsLocalizer } from "react-big-calendar";
 import "react-big-calendar/lib/css/react-big-calendar.css";
 import "react-datepicker/dist/react-datepicker.css";
+import PropTypes from "prop-types"
 import enUS from "date-fns/locale/en-US";
 const locales = {
     "en-US": enUS,
@@ -36,17 +37,21 @@ const events = [
     },
 ];
 
-function Calendarcomp() {
+function Calendarcomp({ height }) {
   
 
     return (
         <>
             
-            <Calendar localizer={localizer} events={events} startAccessor="start" endAccessor="end" style={{ height: 400}} />
+            <Calendar localizer={localizer} events={events} startAccessor="start" endAccessor="end" style={{ height, width: 712 }}/>
 
             
         </>
     );
+}
+
+Calendarcomp.propTypes = {
+    height: PropTypes.string
 }
 
 export default Calendarcomp;

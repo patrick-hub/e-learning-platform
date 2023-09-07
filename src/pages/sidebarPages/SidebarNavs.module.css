@@ -3,6 +3,10 @@
     justify-content: space-around;
     /* align-items: center; */
     place-items: center;
-    height: 81vh;
+    height: 100vh;
     gap: 30px;
+}
+
+.cal {
+    height: 100%;
 }

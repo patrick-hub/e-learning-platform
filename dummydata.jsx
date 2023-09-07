@@ -151,4 +151,55 @@ const assignmentdata = [
 	},
 ];
 
-export { dummyData, assignmentdata };
+const recordedClassesdata = [
+	{
+		id: 15,
+		course: "Mathematics",
+		topic: "Simultaneous Equation",
+		duration: "2hrs 12mins",
+		lastActivity: "21/09/2023"
+
+	},
+	{
+		id: 16,
+		course: "Biology",
+		topic: "Reproduction",
+		duration: "1hrs 19mins",
+		lastActivity: "20/09/2023"
+
+	},
+	{
+		id: 17,
+		course: "Chemistry",
+		topic: "Redux Reaction",
+		duration: "2hrs 00mins",
+		lastActivity: "26/09/2023"
+
+	},
+	{
+		id: 18,
+		course: "Economics",
+		topic: "Scale of preference",
+		duration: "2hrs 12mins",
+		lastActivity: "21/09/2023"
+
+	},
+	{
+		id: 19,
+		course: "English",
+		topic: "Figures of speech",
+		duration: "2hrs 30mins",
+		lastActivity: "21/09/2023"
+
+	},
+	{
+		id: 20,
+		course: "Further Mathematics",
+		topic: "Differentiation",
+		duration: "2hrs 10mins",
+		lastActivity: "18/09/2023"
+
+	}
+]
+
+export { dummyData, assignmentdata,recordedClassesdata };
