@@ -72,7 +72,6 @@ const assignmentdata = [
 		status: "in progress",
 		lastActive: "21/22/2023",
 		subject: "Mathematics",
-		updates: 1,
         img: '/src/svg/maths.svg'
 
 	},
@@ -92,7 +91,6 @@ const assignmentdata = [
 		status: "in progress",
 		lastActive: "21/23/2023",
 		subject: "Physics",
-		updates: 2,
         img: "/src/svg/physics.svg"
 	},
 	{
@@ -110,7 +108,6 @@ const assignmentdata = [
 		status: "in progress",
 		lastActive: "21/24/2023",
 		subject: "Biology",
-		updates: 0,
         img: "/src/svg/biology.svg"
 	},
 	{
@@ -128,7 +125,6 @@ const assignmentdata = [
 		status: "done",
 		lastActive: "21/22/2023",
 		subject: "civic",
-		updates: 1,
         img: "/src/svg/civic.svg"
 	},
     {
@@ -146,7 +142,7 @@ const assignmentdata = [
 		status: "done",
 		lastActive: "21/22/2023",
 		subject: "Economics",
-		updates: 1,
+	
         img: '/src/svg/economics.svg'
 	},
 ];
@@ -202,4 +198,49 @@ const recordedClassesdata = [
 	}
 ]
 
-export { dummyData, assignmentdata,recordedClassesdata };
+const exploredata = [
+	{
+		id: "21",
+		course: "Beginners Guide to Coding",
+		description: "Learn about the basics of coding and how it is being applied",
+		teacher: "Mr Johnson",
+		img: '/src/svg/exploreImage.svg'
+	},
+	{
+		id: "21",
+		course: "Beginners Guide to Coding",
+		description: "Learn about the basics of coding and how it is being applied",
+		teacher: "Mr Johnson",
+		img: '/src/svg/exploreImage.svg'
+	},
+	{
+		id: "21",
+		course: "Beginners Guide to Coding",
+		description: "Learn about the basics of coding and how it is being applied",
+		teacher: "Mr Johnson",
+		img: '/src/svg/exploreImage.svg'
+	},
+	{
+		id: "21",
+		course: "Beginners Guide to Coding",
+		description: "Learn about the basics of coding and how it is being applied",
+		teacher: "Mr Johnson",
+		img: '/src/svg/exploreImage.svg'
+	},
+	{
+		id: "21",
+		course: "Beginners Guide to Coding",
+		description: "Learn about the basics of coding and how it is being applied",
+		teacher: "Mr Johnson",
+		img: '/src/svg/exploreImage.svg'
+	},
+	{
+		id: "21",
+		course: "Beginners Guide to Coding",
+		description: "Learn about the basics of coding and how it is being applied",
+		teacher: "Mr Johnson",
+		img: '/src/svg/exploreImage.svg'
+	},
+]
+
+export { dummyData, assignmentdata,recordedClassesdata, exploredata };

@@ -12,7 +12,7 @@ function SubjectCard(props) {
 
 				<div className={styles.cardStats}>
 					<p>{props.item.subject}</p>
-					<small>{props.item.updates}update</small>
+					<small>{props.item.updates && props.item.updates} {props.item.updates ? 'updates' : ""}</small>
 				</div>
 				<div className={styles.usericon}>
 					<img src={User} alt="" />

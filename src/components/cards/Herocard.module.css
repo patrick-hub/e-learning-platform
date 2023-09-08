@@ -185,3 +185,16 @@ width: 10px;
 	place-content: center;
 	border-radius: 10px;
 }
+
+/* Explore Card Style */
+
+.exploreCard {
+	height: 250px;
+	width: 226px;
+}
+
+.exploreContent {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+}

@@ -34,11 +34,12 @@
 /* Calendar sectiom */
 
 .calendarSection {
-	display: flex;
+	display: grid;
+	grid-template-columns: 2fr 1fr;
 	align-items: center;
 	justify-content: start;
 	margin-top: 38px;
-	gap: 37px;
+	gap: 20px;
 }
 
 /* card */
@@ -47,7 +48,7 @@
 	display: flex;
 	flex-direction: column;
 	background-color: #fff;
-	height: 400px;
+	height: 430px;
 	overflow-y: scroll;
 	padding: 25px;
 	gap: 10px;
@@ -165,6 +166,35 @@
 
 @media screen and (max-width: 1000px) {
 	.assignmentcard {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+/* Explore Page */
+
+.learnings {
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	border-radius: 20px;
+}
+
+
+
+.learnings h2 {
+	margin-bottom: 10px;
+}
+.exploreCourses {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 10px;
+	height: 342px;
+	overflow-y: scroll;
+}
+
+@media screen and (max-width: 1400px) {
+	.exploreCourses {
 		grid-template-columns: repeat(2, 1fr);
 	}
 }

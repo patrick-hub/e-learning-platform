@@ -17,6 +17,7 @@ import Mark from "./mark.svg";
 import Furthermaths from "./furthermaths.svg";
 import SearchIcon from "./search.svg";
 import Bell from "./bell.svg";
+import ExploreImage from "./exploreImage.svg"
 
 export {
 	RoundbookSVG,
@@ -37,5 +38,6 @@ export {
     Mark,
 	Furthermaths,
 	SearchIcon,
-	Bell
+	Bell,
+	ExploreImage
 };

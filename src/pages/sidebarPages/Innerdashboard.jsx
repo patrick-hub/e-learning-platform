@@ -2,11 +2,16 @@ import { useState } from "react";
 import styles from "./DisplayPage.module.css";
 import HeroCard from "../../components/cards/HeroCard";
 import Calendarcomp from "../../components/Calendar";
-import { dummyData, recordedClassesdata } from "../../../dummydata";
+import {
+	dummyData,
+	recordedClassesdata,
+	exploredata,
+} from "../../../dummydata";
 import Card from "../../components/cards/Cardcomponent";
 import { Link } from "react-router-dom";
 import RecordedClasses from "../../components/cards/RecordedClasses";
 import { Duration, RoundbookSVG, Calendar, Notebook } from "../../svg";
+import ExploreCard from "../../components/cards/ExploreCard";
 
 function Innerdashboard() {
 	const [totalSubjects] = useState(11);
@@ -58,7 +63,7 @@ function Innerdashboard() {
 			</section>
 
 			<section className={styles.calendarSection}>
-				<Calendarcomp height={400} />
+				<Calendarcomp height={420} />
 
 				<div className={styles.card}>
 					<div className={styles.heading}>
@@ -71,8 +76,18 @@ function Innerdashboard() {
 					))}
 				</div>
 			</section>
+
 			<section className={styles.calendarSection}>
-				<Calendarcomp height={400} />
+				<div className={styles.learnings}>
+					<div>
+						<h2>My Learnings</h2>
+					</div>
+					<div className={styles.exploreCourses}>
+						{exploredata.map((data) => (
+							<ExploreCard key={data.id} data={data} />
+						))}
+					</div>
+				</div>
 
 				<div className={styles.card}>
 					<div className={styles.heading}>
@@ -80,8 +95,8 @@ function Innerdashboard() {
 					</div>
 
 					{recordedClassesdata.slice(0, 4).map((data) => (
-						<RecordedClasses key={data.id} data={data}/>
-					)) }
+						<RecordedClasses key={data.id} data={data} />
+					))}
 				</div>
 			</section>
 		</main>

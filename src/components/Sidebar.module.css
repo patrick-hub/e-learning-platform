@@ -40,15 +40,16 @@
 
 .sidebarLink li:hover,
 .sidebarLink li:focus {
-	background-color: #eee;
-	padding: 8px 0;
-	border-radius: 10px;
+	/* background-color: #eee; */
+	/* padding: 8px 0; */
+	color: blue;
+	/* border-radius: 10px; */
     cursor: pointer;
 }
 
 .sidebarLink li a:global(.active) {
     background-color: #eee;
-	padding: 5px 0;
+	padding: 3px 0;
 	border-radius: 10px;
     cursor: pointer;
 	width: 100%;
