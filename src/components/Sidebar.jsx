@@ -48,7 +48,7 @@ function Sidebar() {
 						</NavLink>
 					</li>
 					<li>
-						<NavLink to="/dashboard/teachers">
+						<NavLink to="/dashboard/settings">
 			
 							<img src={Settings} alt="settings-icon" />
 							Settings

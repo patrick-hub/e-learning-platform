@@ -13,6 +13,8 @@ import Explore from "./pages/sidebarPages/Explore";
 import Calendar from "./pages/sidebarPages/Calendar";
 import Support from "./pages/sidebarPages/Support";
 import "react-big-calendar/lib/css/react-big-calendar.css";
+import Settings from "./pages/sidebarPages/settings/Settings";
+import Profile from "./pages/sidebarPages/settings/Profile";
 
 function App() {
 	return (
@@ -30,6 +32,9 @@ function App() {
 						<Route path="calendar" element={<Calendar />} />
 						<Route path="explore" element={<Explore />} />
 						<Route path="support" element={<Support />} />
+						<Route path="settings" element={<Settings />}>
+							<Route path="profile" element={<Profile />} />
+						</Route>
 					</Route>
 				</Routes>
 			</BrowserRouter>
