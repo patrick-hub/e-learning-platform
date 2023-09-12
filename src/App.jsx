@@ -15,6 +15,8 @@ import Support from "./pages/sidebarPages/Support";
 import "react-big-calendar/lib/css/react-big-calendar.css";
 import Settings from "./pages/sidebarPages/settings/Settings";
 import Profile from "./pages/sidebarPages/settings/Profile";
+import Password from "./pages/sidebarPages/settings/Password";
+import Notifications from "./pages/sidebarPages/settings/Notifications";
 
 function App() {
 	return (
@@ -34,7 +36,11 @@ function App() {
 						<Route path="support" element={<Support />} />
 						<Route path="settings" element={<Settings />}>
 							<Route path="profile" element={<Profile />} />
+							<Route path="password" element={<Password />} />
+							<Route path="notification" element={<Notifications /> } />
 						</Route>
+						
+
 					</Route>
 				</Routes>
 			</BrowserRouter>

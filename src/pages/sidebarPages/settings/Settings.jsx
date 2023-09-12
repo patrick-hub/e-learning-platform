@@ -1,15 +1,31 @@
-import { Link } from "react-router-dom"
+import { Tabs } from '@mantine/core';
+import Profile from './Profile';
+import Password from './Password';
+import Notifications from './Notifications';
+import styles from "./Settings.module.css"
 
 function Settings() {
-    return (
-        <div>
-            <nav style={{display: "flex", listStyle: "none", textDecoration:"none", gap:"20px", borderBottom: "1px solid grey", borderBlockWidth: "1px"}}>
-                <Link to="/dashboard/settings/profile" style={{textDecoration: "none"}}>Profile</Link>
-                <Link style={{textDecoration: "none"}}>Password</Link>
-                <Link style={{textDecoration: "none"}}>Notification</Link>
-            </nav>
-        </div>
-    )
+  return (
+    <Tabs defaultValue="profile" className={styles.settingsContent}>
+      <Tabs.List>
+        <Tabs.Tab value="profile" >Profile</Tabs.Tab>
+        <Tabs.Tab value="password" >Password</Tabs.Tab>
+        <Tabs.Tab value="notification">Notification</Tabs.Tab>
+      </Tabs.List>
+
+      <Tabs.Panel value="profile" pt="xs">
+        <Profile />
+      </Tabs.Panel>
+
+      <Tabs.Panel value="password" pt="xs">
+        <Password />
+      </Tabs.Panel>
+
+      <Tabs.Panel value="notification" pt="xs">
+        <Notifications />
+      </Tabs.Panel>
+    </Tabs>
+  );
 }
 
 export default Settings

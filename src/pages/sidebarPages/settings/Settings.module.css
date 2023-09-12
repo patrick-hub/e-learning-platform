@@ -1,0 +1,66 @@
+.settingsContent {
+    background-color: #fff;
+    height: 100%;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+/* Profile styling */
+
+.fullProfile {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.userProfile, .furtherInfo {
+    width: 50vw;
+    border: 1px solid #EEEEEE;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.settingsBtn {
+    background: transparent;
+    border: 1px solid #EEEEEE;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+.settingsBtn:hover {
+    cursor: pointer;
+}
+
+.userProfile {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 8px;
+   
+}
+
+.furtherInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.furtherInfo p {
+    font-weight: bold;
+}
+.edit {
+    display: flex;
+    justify-content: space-between;
+}
+
+.userdetails {
+
+}
+
+
+
+.furtherDetails {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
