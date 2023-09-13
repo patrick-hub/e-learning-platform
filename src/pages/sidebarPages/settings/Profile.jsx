@@ -1,3 +1,4 @@
+import { Edit } from "../../../svg";
 import styles from "./Settings.module.css";
 function Profile() {
 	return (
@@ -17,7 +18,7 @@ function Profile() {
 			<section className={styles.furtherInfo}>
                 <div className={styles.edit}>
                     <p>Personal Information</p>
-                    <button className={styles.settingsBtn}>Edit</button>
+                    <button className={styles.settingsBtn}><img src={Edit} alt="" /> Edit</button>
                 </div>
                 <div className={styles.furtherDetails}>
 				<div>
@@ -50,6 +51,38 @@ function Profile() {
 				</div>
                 </div>
 			</section>
+
+            <section className={styles.furtherInfo}>
+                <div className={styles.edit}>
+                    <p>Address</p>
+                    <button className={styles.settingsBtn}><img src={Edit} alt="" /> Edit</button>
+                </div>
+                <div className={styles.furtherDetails}>
+				<div>
+					<small className="text-labels font-normal leading-5 text-neutral-500">
+						Country 
+					</small>
+                    <p className="font-medium text-sm leading-5 capitalize">Nigeria</p>
+
+				</div>
+                <div>
+					<small className="text-labels font-normal leading-5 text-neutral-500">
+						City/State
+					</small>
+                    <p className="font-medium text-sm leading-5 capitalize">Lagos</p>
+
+				</div>
+                <div>
+					<small className="text-labels font-normal leading-5 text-neutral-500">
+						Postal code
+					</small>
+                    <p className="font-medium text-sm leading-5 capitalize">100001</p>
+
+				</div>
+                </div>
+			</section>
+
+        
 		</main>
 	);
 }

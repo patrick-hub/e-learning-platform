@@ -1,7 +1,7 @@
 .settingsContent {
     background-color: #fff;
-    height: 100%;
-    padding: 20px;
+    /* height: 100vh; */
+    padding: 15px;
     border-radius: 20px;
 }
 
@@ -21,6 +21,9 @@
 }
 
 .settingsBtn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
     background: transparent;
     border: 1px solid #EEEEEE;
     padding: 10px 20px;
