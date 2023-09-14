@@ -1,19 +1,20 @@
 import { useState } from "react"
+import styles from "./Settings.module.css"
 
 function Password() {
     const [password, setPassword] = useState("")
 
     return (
-        <form>
-        <div>
+        <form className={styles.form}>
+        <div className={styles.input}>
             <label htmlFor="currentPassword">Current Password</label>
         <input type="text" value={password} onChange={setPassword}/>
         </div>
-        <div>
+        <div  className={styles.input}>
             <label htmlFor="currentPassword">New password</label>
         <input type="text" value={password}/>
         </div>
-        <div>
+        <div  className={styles.input}>
             <label htmlFor="currentPassword">Confirm Password</label>
         <input type="text" value={password}/>
         </div> 

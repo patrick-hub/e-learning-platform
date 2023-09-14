@@ -1,6 +1,6 @@
 .settingsContent {
     background-color: #fff;
-    /* height: 100vh; */
+    height: 100%;
     padding: 15px;
     border-radius: 20px;
 }
@@ -17,7 +17,7 @@
     width: 50vw;
     border: 1px solid #EEEEEE;
     border-radius: 10px;
-    padding: 20px;
+    padding: 15px;
 }
 
 .settingsBtn {
@@ -66,4 +66,25 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
+}
+
+/* Password styling */
+
+.input {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+}
+
+.input input {
+    max-width: 20vw;
+    height: 40px;
+    border-radius: 8px;
+    border-width: 0.1em;
+    border-color: #EEEEEE;
+}
+
+.form {
+    height: 100%;
 }
