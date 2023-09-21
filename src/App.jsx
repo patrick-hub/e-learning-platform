@@ -8,7 +8,7 @@ import PageNotFound from "./pages/PageNotFound";
 import Dashboard from "./pages/Dashboard";
 import Subjects from "./pages/sidebarPages/Subjects";
 import Innerdashboard from "./pages/sidebarPages/Innerdashboard";
-import Assignments from "./pages/sidebarPages/Assignments";
+import Assignments from "./pages/sidebarPages/assignments/Assignments";
 import Explore from "./pages/sidebarPages/Explore";
 import Calendar from "./pages/sidebarPages/Calendar";
 import Support from "./pages/sidebarPages/Support";
@@ -17,6 +17,7 @@ import Settings from "./pages/sidebarPages/settings/Settings";
 import Profile from "./pages/sidebarPages/settings/Profile";
 import Password from "./pages/sidebarPages/settings/Password";
 import Notifications from "./pages/sidebarPages/settings/Notifications";
+import AssignmentDetails from "./pages/sidebarPages/assignments/AssignmentDetails";
 
 function App() {
 	return (
@@ -31,6 +32,7 @@ function App() {
 						<Route path="innerdashboard" element={<Innerdashboard />} />
 						<Route path="subjects" element={<Subjects />} />
 						<Route path="assignments" element={<Assignments />} />
+						<Route path="assignmentDetails" element={<AssignmentDetails />}/>
 						<Route path="calendar" element={<Calendar />} />
 						<Route path="explore" element={<Explore />} />
 						<Route path="support" element={<Support />} />

@@ -2,7 +2,14 @@ import styles from "./Herocard.module.css";
 import PropTypes from "prop-types";
 import { Calendar, Mark, RoundbookSVG, User } from "../../svg";
 import Progressbar from "../ProgressBar";
+import { useNavigate } from "react-router";
 function Card(props) {
+	const navigate = useNavigate()
+
+	function goToAssignment(){
+		navigate('/dashboard/assignmentDetails')
+	}
+
 	return (
 		<main className={styles.card}>
 			<section className={styles.assign}>
@@ -38,7 +45,7 @@ function Card(props) {
 			</section>
 	
 				<Progressbar daysLeft={props.data.daysLeft}/>
-				{/* <small>{props.data.daysLeft} days left</small> */}
+				<small onClick={goToAssignment} style={{cursor: "pointer", color: "#004C97"}}>View more</small>
 		</main>
 	);
 }
