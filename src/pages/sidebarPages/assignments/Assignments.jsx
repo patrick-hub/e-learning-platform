@@ -5,16 +5,9 @@ import Select from "react-dropdown-select";
 import { useState } from "react";
 import Search from "../../../components/Search";
 import { RoundbookSVG } from "../../../svg";
-import { useNavigate } from "react-router";
 
 function Assignments() {
-	const [selectedOptions, setSelectedOptions] = useState();
-
-	const navigate = useNavigate()
-	
-	function goTopage(){
-		navigate('/dashboard/assignmentDetails')
-	}
+	const [selectedOptions, setSelectedOptions] = useState();	
 
 	const customStyles = {
 		border: "0.8px solid #999",
@@ -72,7 +65,6 @@ function Assignments() {
 				{dummyData.map((data) => (
 					<Card data={data} key={data.id} />
 				))}
-				<button onClick={() => goTopage()}>Go to Assignment</button>
 			</div>
 			
 		</div>

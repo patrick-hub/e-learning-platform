@@ -19,6 +19,7 @@ import SearchIcon from "./search.svg";
 import Bell from "./bell.svg";
 import ExploreImage from "./exploreImage.svg";
 import Edit from "./edit.svg"
+import Back from "./back.svg"
 
 export {
 	RoundbookSVG,
@@ -41,5 +42,6 @@ export {
 	SearchIcon,
 	Bell,
 	ExploreImage,
-	Edit
+	Edit,
+	Back
 };

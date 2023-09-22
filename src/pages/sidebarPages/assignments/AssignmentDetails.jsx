@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router"
+import { Back } from "../../../svg"
 
 function AssignmentDetails() {
     const navigate = useNavigate()
@@ -8,7 +9,7 @@ function AssignmentDetails() {
     }
     return (
         <div>
-            <button onClick={goBack}>Go back</button>
+            <small onClick={goBack} style={{cursor: "pointer", color:"#004C97", fontWeight:"bold", display: "flex", gap: "5px"}}><img src={Back} alt=""/> Go back</small>
             <h1>Hello</h1>
         </div>
     )
